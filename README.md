@@ -8,8 +8,8 @@
 
   <h2>Tech Stack</h2>
   <ul>
-    <ol>HTML5-For structured and semantic content</ol>
-    <ol>ailwind CSS-For fast, utility-first, and responsive styling.</ol>
+    <li>HTML5-For structured and semantic content</li>
+    <li>ailwind CSS-For fast, utility-first, and responsive styling.</li>
   </ul>
 
   <h3>Key Features</h3>
