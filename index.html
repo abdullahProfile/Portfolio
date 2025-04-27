@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <title>Abdullah</title>
-  <style type="text/tailwindcss">
-    @theme {
-      --color-clifford: #fff;
-    }
-  </style>
+
 </head>
-<body class="bg-gray-900">
+<body id="body" class="bg-gray-900 dark:bg-gray-900">
   <div class="max-w-2xl mx-auto my-10 p-5 max-md:mx-5">
-    <div class="flex item-center gap-9 max-md:flex-wrap max-md:justify-center">
-      <img src="./abdullah.jpg" class="w-30 object-cover rounded-md" alt="profile">
+
+    <!-- Personal Info Section -->
+    <section class="flex items-start gap-9 justify-between max-md:flex-wrap max-md:justify-center">
+      <div class="flex item-center gap-9 max-md:flex-wrap max-md:justify-center">
+        <img src="./abdullah.jpg" class="w-30 object-cover rounded-md" alt="profile">
 
       <div class="max-md:text-center">
-        <h1 class="text-white font-bold text-xl">Abudllah</h1>
+        <h1 id="nameHeading" class="text-white font-bold text-xl">Abudllah</h1>
         <ul class="list-none text-gray-500 mb-4">
           <li>20 y/o</li>
           <li>Raised in Pakistan</li>
           <li>Study at comsats Abbottabad</li>
         </ul>
       </div>
-    </div>
+      </div>
+      <button id="themeToggle" class="text-2xl font-bold text-gray-600 bg-none cursor-pointer">☀︎</button>
+    </section>
 
-    <div class="flex flex-col gap-5 my-15">
-      <h2 class="uppercase text-white font-bold font-12">Experience <span class="ml-1">💼</span></h2>
+     <!-- Add other experience items here -->
+    <section class="flex flex-col gap-5 my-15">
+      <h2 class="section-heading uppercase text-white font-bold font-12">Experience <span class="ml-1">💼</span></h2>
 
       <div class="flex flex-col gap-5 max-md:flex-wrap">
-       <div class="bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
+       <div class="card bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
         <div class="flex justify-between items-center">
           <a href="https://uptek.com/" class="decoration-none text-gray-400">Frontend Intern @ <span class="text-blue-300">Uptek</span></a>
 
@@ -50,7 +52,7 @@
         </div>
        </div>
 
-       <div class="bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
+       <div class="card bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
         <div class="flex justify-between items-center max-md:flex-wrap max-md:justify-center">
           <a href="https://uptek.com/" class="decoration-none text-gray-400">Frontend Intern @ <span class="text-blue-300">Uptek</span></a>
 
@@ -69,12 +71,13 @@
         </div>
        </div>
       </div>
-    </div>
+    </section>
 
-    <div>
-      <h2 class="uppercase text-white font-bold font-12 mb-4">Education🎓</h2>
+    <!-- Education Section -->
+    <section>
+      <h2 class="section-heading uppercase text-white font-bold font-12 mb-4">Education🎓</h2>
 
-      <div class="bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
+      <div class="card bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
         <div class="flex justify-between items-center">
           <a href="https://www.cuiatd.edu.pk/" class="decoration-none text-gray-400">Currently studying at @<span class="text-blue-300">Comsats Abbottabad</span></a>
 
@@ -92,13 +95,14 @@
           <p class="text-gray-400 text-italic">Spring 2023</p>
         </div>
        </div>
-    </div>
+    </section>
 
-    <div class="flex flex-col gap-5 my-15">
-      <h2 class="uppercase text-white font-bold font-12">Projects <span class="ml-1">💻</span></h2>
+    <!-- Projects Section -->
+    <section class="flex flex-col gap-5 my-15">
+      <h2 class="section-heading uppercase text-white font-bold font-12">Projects <span class="ml-1">💻</span></h2>
 
       <div class="flex flex-col gap-5">
-       <div class="bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
+       <div class="card bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
         <div class="flex justify-between items-center">
           <h4 class="font-bold font-12 text-blue-300">Ecommerce Practice Project</h4>
 
@@ -114,7 +118,7 @@
           <p class="text-gray-400 font-12">E-commerce Platform UI Built with HTML, CSS</p>
        </div>
 
-       <div class="bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
+       <div class="card bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
         <div class="flex justify-between items-center">
           <h4 class="font-bold font-12 text-blue-300">Sport News Webiste</h4>
 
@@ -130,7 +134,7 @@
           <p class="text-gray-400">Developed a sports news website using HTML and Tailwind CSS.</p>
        </div>
 
-       <div class="bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
+       <div class="card bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
         <div class="flex justify-between items-center">
           <h4 class="font-bold font-12 text-blue-300">Furniture E-commerce Website</h4>
 
@@ -146,7 +150,7 @@
           <p class="text-gray-400">Built with HTML, CSS, and JavaScript.</p>
        </div>
 
-       <div class="bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
+       <div class="card bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
         <div class="flex justify-between items-center">
           <h4 class="font-bold font-12 text-blue-300">Landing Page</h4>
 
@@ -162,18 +166,20 @@
           <p class="text-gray-400">Built with HTML and CSS</p>
        </div>
       </div>
-    </div>
+    </section>
 
-    <div>
-      <h2 class="uppercase text-white font-bold font-12 mb-4">Languages 🌍</h2>
-      <div class="bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
+    <!-- Languages Section -->
+    <section>
+      <h2 class="section-heading uppercase text-white font-bold font-12 mb-4">Languages 🌍</h2>
+      <div class=" card bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
         <p class="text-gray-400">Proficient in Urdu (Native), with basic knowledge of English.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="my-10">
-      <h2 class="uppercase text-white font-bold font-12 mb-4">Contact 📞</h2>
-      <div class="bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
+    <!-- Contact Section -->
+    <section class="my-10">
+      <h2 class="section-heading uppercase text-white font-bold font-12 mb-4">Contact 📞</h2>
+      <div class=" card bg-gray-600 flex flex-col gap-4 p-5 rounded-md">
         <a href="mailto:abdullahdev88@gmail.com" class="text-gray-400 flex gap-4 items-center text-lg">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-6 fill-white"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
           </svg>
@@ -191,8 +197,29 @@
           </a>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 
+  <script>
+    const toggleButton = document.getElementById('themeToggle');
+    const body = document.getElementById('body');
+    const headings = document.querySelectorAll('.section-heading, #nameHeading');
+    const cards = document.querySelectorAll('.card');
+
+    let isDark = true;
+
+    toggleButton.addEventListener('click', () => {
+      isDark = !isDark;
+      if (isDark) {
+        body.className = "bg-gray-900";
+        headings.forEach(h => h.classList.replace('text-black', 'text-white'));
+        cards.forEach(c => c.classList.replace('bg-transparent', 'bg-gray-600'));
+      } else {
+        body.className = "bg-white";
+        headings.forEach(h => h.classList.replace('text-white', 'text-black'));
+        cards.forEach(c => c.classList.replace('bg-gray-600', 'bg-gray-50'));
+      }
+    });
+  </script>
 </body>
 </html>
