@@ -9,7 +9,7 @@
   <h2>Tech Stack</h2>
   <ul>
     <li>HTML5-For structured and semantic content</li>
-    <li>ailwind CSS-For fast, utility-first, and responsive styling.</li>
+    <li>Tailwind CSS-For fast, utility-first, and responsive styling.</li>
   </ul>
 
   <h3>Key Features</h3>
