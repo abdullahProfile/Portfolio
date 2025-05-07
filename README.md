@@ -3,7 +3,7 @@
 <div>
   <h1>Personal Portfolio Website</h1>
   <p>
-    Welcome to my personal portfolio — a simple, responsive, and modern website crafted to showcase my skills, projects, and journey as a web developer.
+    Welcome to my personal portfolio-a simple, responsive, and modern website crafted to showcase my skills, projects, and journey as a web developer.
   </p>
 
   <h2>Tech Stack</h2>
